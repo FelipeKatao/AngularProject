@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js" integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="./css/estilo_site.css" rel="stylesheet">
+    <title>Aula Angular</title>
+</head>
+
+<body ng-app="lista">
+
+    <!--
+    <div  ng-controller="lista_principal">
+        <div class="CaixaLista">
+            <div class="ElementoLista {{x.Tema}}" ng-repeat="x in Lista_usuarios" 
+            ng-click="Chama_usuario(x.Nome,x.conteudo,x.Tema)">
+                <h1> {{x.Nome}} </h1>
+            </div>
+        </div>
+
+        <div class="dialog {{Tema_usuario}}" ng-if="usuario_escolhido != '' ">
+            <h1> {{usuario_escolhido}} </h1>
+            <h3> {{Conteudo_dialog}}</h3>
+        <button ng-click="Fechar_dialogo()">Fechar dialogo</button>
+        </div>
+    </div>
+    -->
+    <nav>
+        <ul>
+            <li><a href="#!/">Home</a></li>
+            <li> <a href="#!/produtos">Produtos</a></li>
+            <li>Sobre</li>
+        </ul>
+    </nav>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <h4>Criado por Felipe,2023</h4>
+    </footer>
+
+    <script src="./js/lista.js"></script>
+</body>
+
+</html>
