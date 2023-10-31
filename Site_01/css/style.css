@@ -1,0 +1,61 @@
+nav ul li{
+    float:left;
+    list-style: none;
+    margin-left: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000641;
+}
+
+nav ul{
+    position: absolute;
+    margin-top: 5vh;
+}
+
+nav{
+    height: 10vh;
+    margin-top: -4vh;
+    background-color: #8181ff;
+}
+.ContCard{
+    width: 190vh;
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+}
+.CardUsuario{
+    border-radius: 2vh;
+    padding: 2vh;
+    background-color: #000641;
+    height: 30vh;
+    width: 50vh;
+    color: #8181ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+.colors{
+    background-color: pink;
+    color: black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+
+.corpo{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98%;
+    height: auto;
+    padding: 2vh;
+    margin-top: 2vh;
+}
+.Artigo{
+    padding: 2vh;
+}
+
+.Artigo h2{
+    border-bottom: solid 0.5vh #000641;
+}

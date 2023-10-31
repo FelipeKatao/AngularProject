@@ -1,0 +1,89 @@
+https://www.w3schools.com/angular/angular_directives.asp
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="firstName='John';lastName='Doe'">
+
+        First Name: <input type="text" ng-model="firstName"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+        
+        </div>
+
+
+JS coode 
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+  return {
+    template : "<h1>Made by a directive!</h1>"
+  };
+});
+
+<div ng-app="myApp" ng-controller="myCtrl" ng-init="firstName='Felipe';lastName='Catao'">
+        First Name: <input type="text" ng-model="firstName"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+        
+        </div>
+
+
+<input ng-model="Nome">
+       <div ng-switch on="Nome">
+        <div ng-switch-when="Felipe">
+            <div>Felipe</div>
+        </div>
+        <div ng-switch-default>
+            <div>Marcos Aqui foi daoja</div>
+        </div>
+
+
+"<div ng-if='$scope.Nome==Felipe'>"+
+    "Carregamento de Felipe"+
+    "</div>"
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link href="./style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="app_angular" ng-app="myApp" 
+    ng-controller="dados_pessoa">
+    <titulo></titulo>
+    <p>Name : <input type="text" ng-model="Nome"></p>
+    <formulario></formulario>
+    <card></card>
+    <button ng-click="MudarNome()">Mudar Usuario</button>
+    <div ng-If="Nome == 'Marcos'">
+        <div>Ok</div>
+    </div>
+    <h1 ng-repeat="x in records"> {{x}} </h1>
+    <h1 ng-repeat="(x,y) in MyObj"> {{x}}:{{y}} </h1>
+    <h3 ng-repeat="x in ListRecords" ng-show="_showVar" >{{x.Nome}}</h3>
+
+    <p><a href="#/!">Main</a></p>
+
+<a href="#!red">Red</a>
+<a href="#!green">Green</a>
+<a href="#!blue">Blue</a>
+    </div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
+
+ angular.module ('routeapp.filters', []) .filter ('prefixController', 
+ function () {função de retorno (texto) 
+ {if (typeof text === 'indefinido') {return '';} 
+ var p_string = novo RegExp ('[az] + [0-9] *'); 
+ var p_int = novo RegExp ("[0-9] +"); 
+ if (p_int.test (texto)) {return '';} else if (p_string.test (text))
+  {return text.charAt (0) .toUpperCase () + ((text.length> 1)? text.slice (1): '');} 
+  else {return '';}} ;});

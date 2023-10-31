@@ -1,0 +1,23 @@
+<div class="corpo">
+    
+    <div class="Artigo">   
+    <h2>
+        Listagem de clientes em um unico portal
+    </h2>
+
+    <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus illum reiciendis non ipsum magni odio
+        expedita fugiat soluta, pariatur quaerat quidem hic dolorum saepe consequuntur labore autem repellat? Ut?
+    </h3>
+</div>
+ 
+    <h2>Escolha um tema para os Cards</h2>
+    <input type="text" ng-model="tema">
+    <div ng-if="tema == 'none'">
+        Nenhum tema esta selecionado
+    </div>
+    <div class="CardUsuario {{tema}} ">
+        <h1>Nome Usuario</h1>
+        <h3>Id de sessao</h3>
+    </div>
+</div>

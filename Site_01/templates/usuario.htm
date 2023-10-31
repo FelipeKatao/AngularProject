@@ -1,0 +1,12 @@
+<div class="ContCard">
+    <div  ng-repeat="x in usuarios">
+        <div id="{{x.Nome}}" class="CardUsuario {{Tema}}">
+            <h1>Nome: {{x.Nome}} , {{x.Sobrenome}}</h1>
+            <h3> User Id: {{x.UsuarioId}} , AcessoId: {{x.UltimoAcesso}} </h3>
+            <button ng-click="RemoverUsuario(x.Nome)">Remover usuario {{x.Nome}}</button>
+        </div>
+    </div>
+<div>
+
+
+    
